@@ -1,5 +1,9 @@
 # Valheim Spawner Cooldown
 
+<img width="1300" height="372" alt="image" src="https://github.com/user-attachments/assets/afa60c40-bf82-488f-9598-e74d29a78e69" />
+
+
+
 A BepInEx mod for Valheim that lets you choose how long creature spawners wait between two creatures.
 
 Vanilla body piles in the Swamp try to spawn a draugr every 5 seconds. Kill one and another rises almost at once, so clearing a crypt entrance or a swamp village turns into an endless fight. With this mod, the first group still spawns as usual, then respawns follow the interval you set. It works for every spawner of this kind: body piles, bone piles, greydwarf nests, and more.
