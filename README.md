@@ -11,7 +11,7 @@ Vanilla body piles in the Swamp try to spawn a draugr every 5 seconds. Kill one 
 - A global multiplier and one multiplier per spawner type, both as sliders in the in-game configuration window (F1). Each spawner shows its resulting interval next to the slider, for example `x4.0 = 20 s (vanilla 5 s)`.
 - Changes apply immediately, no restart needed.
 - Natural first wave: when you arrive at a spawner, its first group still spawns at the vanilla pace (up to the spawner's `maxNear` creatures), then your interval applies to respawns.
-- Multiplayer: only the players who want it need the mod, nothing is installed on the server. Your settings apply to everyone near a spawner your client runs (see [Multiplayer](#multiplayer)).
+- Multiplayer: only the players who want it need the mod, nothing is installed on the server. Your settings apply to everyone near a spawner your client runs (see Multiplayer below).
 
 ## Requirements
 
@@ -109,4 +109,4 @@ Author: Alexandre Le Borgne (alex83690).
 
 [ValheimSpawnerCooldown](https://github.com/alexandre-le-borgne/ValheimSpawnerCooldown) © 2026 by [Alexandre Le Borgne](https://github.com/alexandre-le-borgne) is licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" width="16" height="16"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" width="16" height="16"><img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="" width="16" height="16"><img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt="" width="16" height="16">
 
-You may use, share and modify this mod for non-commercial purposes, as long as you credit the author and distribute your modified versions under the same license. See [LICENSE](LICENSE) for the full terms.
+You may use, share and modify this mod for non-commercial purposes, as long as you credit the author and distribute your modified versions under the same license. See [LICENSE](https://github.com/alexandre-le-borgne/ValheimSpawnerCooldown/blob/main/LICENSE) for the full terms.

@@ -46,4 +46,19 @@
     </Reference>
   </ItemGroup>
 
+  <!-- Thunderstore requires manifest.json, icon.png and README.md at the root of the package zip. -->
+  <Target Name="PackageThunderstore" AfterTargets="Build" Condition="'$(Configuration)' == 'Release'">
+    <PropertyGroup>
+      <PackageStageDir>$(MSBuildProjectDirectory)\bin\thunderstore</PackageStageDir>
+      <PackageZip>$(MSBuildProjectDirectory)\bin\SpawnerCooldown.zip</PackageZip>
+    </PropertyGroup>
+    <ItemGroup>
+      <PackageMetadata Include="thunderstore\manifest.json;thunderstore\icon.png;README.md" />
+    </ItemGroup>
+    <Copy SourceFiles="@(PackageMetadata)" DestinationFolder="$(OutDir)" />
+    <RemoveDir Directories="$(PackageStageDir)" />
+    <Copy SourceFiles="@(PackageMetadata);$(TargetPath)" DestinationFolder="$(PackageStageDir)" />
+    <ZipDirectory SourceDirectory="$(PackageStageDir)" DestinationFile="$(PackageZip)" Overwrite="true" />
+  </Target>
+
 </Project>
