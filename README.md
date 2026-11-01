@@ -16,7 +16,7 @@ Vanilla body piles in the Swamp try to spawn a draugr every 5 seconds. Kill one 
 ## Requirements
 
 - Valheim with [BepInExPack Valheim](https://thunderstore.io/c/valheim/p/denikson/BepInExPack_Valheim/) 5.4.22 or later.
-- Optional, to edit settings in game: [Official BepInEx ConfigurationManager](https://thunderstore.io/c/valheim/p/Azumatt/Official_BepInEx_ConfigurationManager/).
+- [ConfigurationManager](https://thunderstore.io/c/valheim/p/cjayride/ConfigurationManager/) 0.6.2 or later, to edit settings in game (F1). Mod managers install it with this mod; for a manual install, add it yourself or edit the config file instead.
 
 ## Installation
 

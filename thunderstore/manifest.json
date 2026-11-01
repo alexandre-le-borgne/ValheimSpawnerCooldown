@@ -4,6 +4,7 @@
   "website_url": "https://github.com/alexandre-le-borgne/ValheimSpawnerCooldown",
   "description": "Slow down body piles, bone piles, greydwarf nests and other creature spawners. Per-spawner sliders in F1, natural first wave, works in multiplayer without a server install.",
   "dependencies": [
-    "denikson-BepInExPack_Valheim-5.4.2202"
+    "denikson-BepInExPack_Valheim-5.4.2202",
+    "cjayride-ConfigurationManager-0.6.2"
   ]
 }
