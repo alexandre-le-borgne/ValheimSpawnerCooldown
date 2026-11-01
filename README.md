@@ -1,8 +1,6 @@
 # Valheim Spawner Cooldown
 
-<img width="1300" height="372" alt="image" src="https://github.com/user-attachments/assets/afa60c40-bf82-488f-9598-e74d29a78e69" />
-
-
+<img width="1300" height="372" alt="image" src="https://github.com/user-attachments/assets/4a913595-99a3-4089-ad16-a72c8261e048" />
 
 A BepInEx mod for Valheim that lets you choose how long creature spawners wait between two creatures.
 
