@@ -1,13 +1,15 @@
 # Valheim Spawner Cooldown
 
-A BepInEx mod for Valheim that changes how often creature spawners such as body piles, greydwarf nests and bone piles spawn new creatures. Vanilla body piles try to spawn a draugr every 5 seconds; with this mod you choose the interval.
+A BepInEx mod for Valheim that lets you choose how long creature spawners wait between two creatures.
+
+Vanilla body piles in the Swamp try to spawn a draugr every 5 seconds. Kill one and another rises almost at once, so clearing a crypt entrance or a swamp village turns into an endless fight. With this mod, the first group still spawns as usual, then respawns follow the interval you set. It works for every spawner of this kind: body piles, bone piles, greydwarf nests, and more.
 
 ## Features
 
 - A global multiplier and one multiplier per spawner type, both as sliders in the in-game configuration window (F1). Each spawner shows its resulting interval next to the slider, for example `x4.0 = 20 s (vanilla 5 s)`.
 - Changes apply immediately, no restart needed.
 - Natural first wave: when you arrive at a spawner, its first group still spawns at the vanilla pace (up to the spawner's `maxNear` creatures), then your interval applies to respawns.
-- Works in multiplayer for the player running it, with no server-side install (see [Multiplayer](#multiplayer)).
+- Multiplayer: only the players who want it need the mod, nothing is installed on the server. Your settings apply to everyone near a spawner your client runs (see [Multiplayer](#multiplayer)).
 
 ## Requirements
 
@@ -26,7 +28,11 @@ To install it manually:
 2. Copy the content of its `BepInExPack_Valheim` folder into your Valheim folder, next to `valheim.exe`. With Steam, this folder is usually `C:\Program Files (x86)\Steam\steamapps\common\Valheim`.
 3. Start the game once and quit. A `BepInEx` folder with `config` and `plugins` subfolders now exists.
 
-### 2. Build the mod
+### 2. Get the mod
+
+Download `ValheimSpawnerCooldown.dll` from the [Releases](https://github.com/alexandre-le-borgne/ValheimSpawnerCooldown/releases) page, then go to step 3.
+
+To build it from source instead:
 
 1. Install the [.NET SDK 8](https://dotnet.microsoft.com/download/dotnet/8.0) or later.
 2. Clone this repository.
@@ -87,12 +93,11 @@ The spawner list is read from the game when a world loads, then remembered. On t
 
 ## Multiplayer
 
-In Valheim, a spawner is run by a single client: the network owner of that object, usually the first player who came near it. The mod only changes spawners run by a client that has it:
+The mod does not only act on your own game. In Valheim, a spawner is run by a single client: the network owner of that object, usually the first player who came near it. Its creatures are shared by everyone, so a spawner has one pace for the whole group, set by the client running it.
 
 - No install is needed on the server or for other players.
-- When a spawner near you is run by a player without the mod, your client takes it over, so your settings apply. Disable `ClaimOwnership` to prevent this.
-- When several players have the mod, a spawner already run by one of them is never taken over, and only one modded player claims a free one. Clients do not fight over spawners.
-- Creatures are shared by everyone: a spawner has one pace for the whole group, the one set by the player running it.
+- When a spawner near you is run by a player without the mod, your client takes it over, so your settings apply to every player around it. Disable `ClaimOwnership` to prevent this; the mod then only changes the spawners your client already runs.
+- When several players have the mod, a spawner already run by one of them is never taken over, and only one modded player claims a free one. Clients do not fight over spawners. The settings of the player running a spawner are the ones that apply.
 
 ## Credits
 
